@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Teachable Machine Tools</title>
+</head>
+
+<body>
+    <div class="top-banner">Teachable Machine Image Model</div>
+    <div class="wrapper">
+        <h3>Stopwatch</h3>
+        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+    </div>
+    <button type = "button" onclick="init()",onclick = "startTimer()">Start</button>
+    <button type = "button" onclick="Reset()">Reset</button><br>
+    <div id="webcam-container"></div>
+    <div id="label-container"></div>    
+    <p>dolls => <label id = "mycount">count1</label><br></p>
+    <p>ลำโพง => <label id = "mycount1">count2</label><br></p>
+    <p>สำลี => <label id = "mycount2">count3</label><br></p>
+    <p>Sum =<label id = "max">score</label></p>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script type="text/javascript" src="js/teachablemachine.js"></script>
+</body>
+
+</html>
